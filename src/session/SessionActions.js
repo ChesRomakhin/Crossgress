@@ -21,9 +21,10 @@ export function removeSession(id) {
     }
 }
 
-export function resultSession(date, results) {
+export function resultSession(id, date, results) {
     return {
         type: RESULT,
+        id,
         date,
         results
     }
